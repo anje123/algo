@@ -1,0 +1,14 @@
+function test(str1, str2) {
+  let word = new Set (str1.split(""));
+   for (let str of str2) {
+     if(word.has(str)){
+       word.delete(str);
+     }
+     
+   }
+   return word.size <= 1;
+   
+}
+
+console.log(test("pale","bake"));
+
